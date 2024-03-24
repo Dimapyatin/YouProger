@@ -1,0 +1,147 @@
+main{ 
+    padding-top: 100px; 
+    /* overflow: hidden; */
+} 
+  
+.cont_review_wrapper {  
+    /* position: relative; */  
+    margin: 0 auto;  
+    /* background-color: black; */  
+    width: 100%;  
+    overflow: hidden;
+    
+  
+      
+}  
+  
+.review_wrapper {  
+    width: 60%;  
+    height: 550px;  
+    /* height: 100%; */  
+    margin: auto;  
+    border-radius: 10px;  
+    background-color: rgb(32, 32, 32);  
+    box-shadow: 1px 1px 40px 8px rgb(0, 0, 0);  
+    overflow-y: auto;  
+    scroll-snap-type: y none;  
+  
+  
+      
+}  
+  
+.review_wrapper::-webkit-scrollbar {  
+    width: 0;  
+}  
+  
+.input-area {  
+    /* display: flex; */
+    width: 100%;  
+    box-shadow: 0px 1px 7px  rgb(24, 24, 24);
+    border-radius: 10px;  
+    margin-bottom: 25px;
+  
+}  
+  
+.review_input {  
+    width: 100%;  
+    height: 50px;  
+    border: none;  
+    outline: none;  
+    background: transparent;  
+    color: aliceblue;  
+    padding-left: 20px;  
+     border-bottom: 1px solid black;   
+  
+}  
+  
+.chat-window {  
+    /* min-height: 50px;  
+    max-width: 800px; */  
+    padding-left: 20px;  
+    padding-right: 20px; 
+     
+  
+}  
+.cont_mesAndBtn{ 
+    width: 100%;
+    display: flex; 
+    background-color: rgb(228, 228, 228);  
+    border-bottom: 1px solid rgb(228, 228, 228);  
+    border-radius: 10px;  
+ 
+} 
+.img_review{ 
+    margin-top: 10px; 
+    margin-left: 10px; 
+} 
+  
+.message {  
+    width: 95% ;  
+    word-wrap: break-word;
+    height: 100%;
+    /* padding-top: 20px;  */ 
+    padding-left: 20px;  
+    padding-bottom: 20px;  
+    /* min-height: 50px;  
+    max-width: 800px; */  
+    margin: 0 auto;  
+    /* background-color: rgb(156, 157, 158);  */ 
+    color: rgb(13, 13, 14);  
+    /* border-bottom: 1px solid rgb(134, 133, 133);  */ 
+    /* border-radius: 10px;  */ 
+    /* margin-top: 30px;  */ 
+}  
+.contReviewMas{ 
+    width: 95% ;  
+ 
+} 
+.review_text {  
+    margin: 0;  
+  
+} 
+.btn_review{ 
+    /* color: #007068; 
+    padding: 10px 30px 10px 10px; 
+    font-size: 20px; 
+    background-color: rgb(17, 17, 17); 
+    border-radius: 25px; 
+    border: 0px; 
+    width: 200px; 
+    height: 50px; 
+    margin-top: 15px; 
+    margin-left: 80px; 
+    margin-bottom: -15px;  */
+} 
+.btn_review_inside{ 
+    color: #007068; 
+    font-size: 15px; 
+    border-radius: 25px; 
+    border: 0px; 
+    padding: 5px 20px 5px 5px; 
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 10px; 
+    margin-bottom: 30px; 
+    background-color: rgb(17, 17, 17); 
+ 
+} 
+.btn_review_inside_delete{ 
+    color: #007068; 
+    font-size: 15px; 
+    border-radius: 25px; 
+    border: 0px; 
+    padding: 5px 20px 5px 5px; 
+    display: block; 
+    /* margin: 0 auto; */ 
+    cursor: pointer;
+     
+    margin-top: 10px; 
+    margin-bottom: 30px; 
+    background-color: rgb(17, 17, 17); 
+} 
+.contInputText{ 
+    margin-left: 10px; 
+} 
+.posts-container{ 
+    margin-top: 20px; 
+}
