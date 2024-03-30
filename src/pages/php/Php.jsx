@@ -8,20 +8,14 @@ const Php = ({ hidePhp }) => {
     const [color, setColor] = useState('')
     const [shadow, setShadow] = useState('')
 
-
     function trasparentStyle() {
         setColor('transparent');
         setShadow('0px 0px 4px #ffffff');
-
-
     }
     function trasparentStyleBack() {
         setColor('');
         setShadow('');
-
-
     }
-
 
     const [displayString1, setDisplayString1] = useState('none');
     const [displayString2, setDisplayString2] = useState('none');
@@ -71,7 +65,6 @@ const Php = ({ hidePhp }) => {
 
     const [opacityAlertBtnDescrPhp1, setOpacityAlertBtnDescrPhp1] = useState('0')
 
-
     const [displayDescrPhp1, setDisplayDescrPhp1] = useState('none')
     const [transformDescrPhp1, setTransformDescrPhp1] = useState('scale(0)')
     const [opacityDescrPhp1, setOpacityDescrPhp1] = useState('0')
@@ -102,7 +95,6 @@ const Php = ({ hidePhp }) => {
     const [opacityDescrPhp6, setOpacityDescrPhp6] = useState('0')
     const [opacityBtnDescrPhp6, setOpacityBtnDescrPhp6] = useState('1')
 
-
     function showDescr1() {
         setTransformDescrPhp1('scale(1)')
         setDisplayDescrPhp1('block')
@@ -113,14 +105,11 @@ const Php = ({ hidePhp }) => {
             setOpacityAlertBtnDescrPhp1('0')
         }, 10000);
 
-
         setOpacityBtnDescrPhp2('0')
         setOpacityBtnDescrPhp3('0')
         setOpacityBtnDescrPhp4('0')
         setOpacityBtnDescrPhp5('0')
         setOpacityBtnDescrPhp6('0')
-
-
 
     }
 
@@ -137,16 +126,12 @@ const Php = ({ hidePhp }) => {
         setOpacityBtnDescrPhp5('1')
         setOpacityBtnDescrPhp6('1')
 
-
-
-
     }
 
     function showDescr2() {
         setTransformDescrPhp2('scale(1)')
         setDisplayDescrPhp2('block')
         setOpacityDescrPhp2('1')
-
         setOpacityBtnDescrPhp1('0')
         setOpacityBtnDescrPhp3('0')
         setOpacityBtnDescrPhp4('0')
@@ -274,7 +259,6 @@ const Php = ({ hidePhp }) => {
         setOpacityResultCodePhp('1');
     }
 
-
     const [nameOfAgent, setNameOfAgent] = useState('');
     function handleChangeTakeNameOfAgent() {
         if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
@@ -290,16 +274,10 @@ const Php = ({ hidePhp }) => {
         }
     }
 
-
-
-
-
     return (
         <div>
             <div className='php_wrapper'>
                 <div className='php_backgr'>
-
-
                     <div className='php_text'>
                         <div className='php_headText' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} >
                             Знакомьтесь, Знакомьтесь, PHP!
@@ -346,15 +324,11 @@ const Php = ({ hidePhp }) => {
 
                                                 </div>
                                             </div>
-
-
                                         </div>
-
                                     </div>
                                     <span onClick={showString1} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Добавить тег ?php</span>
                                 </div>
                             </div>
-
 
                             <div className='cont_wrapper_text_php'>
                                 <div className='wrapper_text_php_right'>
@@ -388,19 +362,14 @@ const Php = ({ hidePhp }) => {
                                                     }}
                                                     className='text_descr_compilies2_php'>Далее добавим условный оператор if, он будет проверять условие, которое мы ему дадим, на истинность. Если проверяемые данные соответсвуют нашему условию, то функция срабатывает. В противном случае функция не сработает и перейдет к следующей.
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
                                     <span onClick={showString2} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Добавить if</span>
                                 </div>
-
                             </div>
 
-
                             <div className='cont_wrapper_text_php'>
-
-
                                 <div className='wrapper_text_php'>
                                     <div className='first_part_compilies'>
                                         <span className='php_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 3. Чтобы узнавать имя браузера, используемого пользователем, используем функцию str_contains</span>
@@ -438,10 +407,7 @@ const Php = ({ hidePhp }) => {
                                 </div>
                             </div>
 
-
                             <div className='cont_wrapper_text_php'>
-
-
                                 <div className='wrapper_text_php_right'>
                                     <div className='first_part_compilies'>
                                         <span className='php_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 4. Используем функцию $_SERVER, чтобы получить информацию о браузере пользователя и вытащим оттуда имя самого браузера</span>
@@ -479,7 +445,6 @@ const Php = ({ hidePhp }) => {
                                     <span onClick={showString4} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Добавить строки</span>
                                 </div>
                             </div>
-
 
                             <div className='cont_wrapper_text_php'>
                                 <div className='wrapper_text_php'>
@@ -522,8 +487,6 @@ const Php = ({ hidePhp }) => {
 
 
                             <div className='cont_wrapper_text_php'>
-
-
                                 <div className='wrapper_text_php_right'>
                                     <div className='first_part_compilies'>
                                         <span className='php_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 6. Добавим ещё несколько проверок</span>
@@ -566,7 +529,6 @@ const Php = ({ hidePhp }) => {
                                     }} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Добавить ещё несколько браузеров</span>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -588,7 +550,7 @@ const Php = ({ hidePhp }) => {
                             <br />
                             <span className='php_string5 php_string' style={{ display: displayString6 }}>
                                 <br />    elif (str_contains($_SERVER['HTTP_USER_AGENT'], 'Edg')) &#123;
-                                <br />    echo 'Вы используете Efge'
+                                <br />    echo 'Вы используете Edge'
 
                                 <br />    &#125;
                                 <br />
@@ -616,10 +578,7 @@ const Php = ({ hidePhp }) => {
                             }} className='result_code'>
                             Вы используете {nameOfAgent}
 
-
                         </div>
-
-
                     </div>
                 </div>
             </div>

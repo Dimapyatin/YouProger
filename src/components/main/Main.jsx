@@ -4,7 +4,6 @@ import './Main.css';
 
 function Main({ displayReview, trasparentStyle, trasparentStyleBack, color, shadow }) {
 
-
   return (
     <>
       <div className="container-main" >
@@ -24,7 +23,6 @@ function Main({ displayReview, trasparentStyle, trasparentStyleBack, color, shad
             </div>
           </div>
         </div>
-
       </div>
     </>
   );

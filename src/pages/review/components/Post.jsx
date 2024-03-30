@@ -15,14 +15,7 @@ export default function Post({ postsReviews, deletePost}) {
                                     {postsReview.userreview}
                                 </p>
                             </div>
-
                         </div>
-
-                        <button
-                            className="btn_review_inside_delete"
-                            // onClick={deletePost}
-                        >Удалить отзыв</button>
-
                     </>
                 )
             })}

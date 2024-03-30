@@ -3,74 +3,17 @@ import { useState } from 'react';
 
 function Cplus({ hideCplus }) {
 
-    // const [displayString1, setDisplayString1] = useState('none');
-    // const [displayString2, setDisplayString2] = useState('none');
-    // const [displayString3, setDisplayString3] = useState('none');
-    // const [displayString4, setDisplayString4] = useState('none');
-    // const [displayString5, setDisplayString5] = useState('none');
-    // const [displayString6, setDisplayString6] = useState('none');
-    // const [displayWin, setDisplayWin] = useState('none');
-    // const [opacityWin, setOpacityWin] = useState('0')
-
-    // function showString1() {
-    //     setTimeout(() => {
-    //         setDisplayString1('block')
-    //     }, 50);
-    // }
-    // function showString2() {
-    //     setTimeout(() => {
-    //         setDisplayString2('block')
-    //     }, 50);
-    // }
-    // function showString3() {
-    //     setTimeout(() => {
-    //         setDisplayString3('block')
-    //     }, 50);
-    // }
-    // function showString4() {
-    //     setTimeout(() => {
-    //         setDisplayString4('block')
-    //     }, 50);
-    // }
-    // function showString5() {
-    //     setTimeout(() => {
-    //         setDisplayString5('block')
-    //     }, 50);
-    // }
-    // function showString6() {
-    //     setTimeout(() => {
-    //         setDisplayString6('block')
-    //     }, 50);
-    // }
-    // function showWin() {
-    //     setDisplayWin('block')
-    //     setTimeout(() => {
-    //         setOpacityWin('1');
-    //     }, 3000);
-    // }
-
-
-
-
-
-
     const [color, setColor] = useState('')
     const [shadow, setShadow] = useState('')
-
 
     function trasparentStyle() {
         setColor('transparent');
         setShadow('0px 0px 4px #ffffff');
-
-
     }
     function trasparentStyleBack() {
         setColor('');
         setShadow('');
-
-
     }
-
 
     const [displayString1, setDisplayString1] = useState('none');
     const [displayString2, setDisplayString2] = useState('none');
@@ -162,14 +105,11 @@ function Cplus({ hideCplus }) {
             setOpacityAlertBtnDescrCplus1('0')
         }, 10000);
 
-
         setOpacityBtnDescrCplus2('0')
         setOpacityBtnDescrCplus3('0')
         setOpacityBtnDescrCplus4('0')
         setOpacityBtnDescrCplus5('0')
         setOpacityBtnDescrCplus6('0')
-
-
 
     }
 
@@ -184,9 +124,6 @@ function Cplus({ hideCplus }) {
         setOpacityBtnDescrCplus4('1')
         setOpacityBtnDescrCplus5('1')
         setOpacityBtnDescrCplus6('1')
-
-
-
 
     }
 
@@ -316,12 +253,10 @@ function Cplus({ hideCplus }) {
         setInputValueCplus1(event.target.value);
     };
 
-
     const [inputValueCplus2, setInputValueCplus2] = useState('');
     const handleChangeTakeValue2 = (event) => {
         setInputValueCplus2(event.target.value);
     };
-
 
     const [displayResultCodeCplus, setDisplayResultCodeCplus] = useState('none')
     const [opacityResultCodeCplus, setOpacityResultCodeCplus] = useState('0')
@@ -356,10 +291,6 @@ function Cplus({ hideCplus }) {
                 setResultInputValuesCplus(-number2 / number1);
             }
     }
-
-
-
-
 
     return (
         <div>
@@ -410,18 +341,13 @@ function Cplus({ hideCplus }) {
                                                     }}
                                                     id='text_descr_compilies1-2'
                                                     className='text_descr_compilies1_cplus'>Каждый проект на C++ начинается с объявления функции. В большинстве случаев программа состоит из множества функций и в итоге они соединяются, давая желаемый результат. Но наша программа будет состоять всего из одной функции.
-
                                                 </div>
                                             </div>
-
-
                                         </div>
-
                                     </div>
                                     <span onClick={showString1} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Обьявить функцию</span>
                                 </div>
                             </div>
-
 
                             <div className='cont_wrapper_text_cplus'>
                                 <div className='wrapper_text_cplus_right'>
@@ -461,12 +387,9 @@ function Cplus({ hideCplus }) {
                                     </div>
                                     <span onClick={showString2} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Вывести текст </span>
                                 </div>
-
                             </div>
 
-
                             <div className='cont_wrapper_text_cplus'>
-
                                 <div className='wrapper_text_cplus'>
                                     <div className='first_part_compilies'>
                                         <span className='cplus_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 3. Обьявим две переменные, они будут выполнять роль входных данных</span>
@@ -504,9 +427,7 @@ function Cplus({ hideCplus }) {
                                 </div>
                             </div>
 
-
                             <div className='cont_wrapper_text_cplus'>
-
                                 <div className='wrapper_text_cplus_right'>
                                     <div className='first_part_compilies'>
                                         <span className='cplus_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 4. Добавим scanf, чтобы считывать введенные пользователем числа</span>
@@ -543,7 +464,6 @@ function Cplus({ hideCplus }) {
                                     <span onClick={showString4} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Используем scanf</span>
                                 </div>
                             </div>
-
 
                             <div className='cont_wrapper_text_cplus'>
                                 <div className='wrapper_text_cplus'>
@@ -584,9 +504,7 @@ function Cplus({ hideCplus }) {
                                 </div>
                             </div>
 
-
                             <div className='cont_wrapper_text_cplus'>
-
                                 <div className='wrapper_text_cplus_right'>
                                     <div className='first_part_compilies'>
                                         <span className='cplus_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 6. Выведем данные, добавив функцию printf</span>
@@ -631,12 +549,8 @@ function Cplus({ hideCplus }) {
                         </div>
                     </div>
 
-
-
                     <div className='area_code'>
                         <div>
-
-
                             <div className='cont_txt_area_code'>
                                 
                                 <br />
@@ -654,10 +568,7 @@ function Cplus({ hideCplus }) {
                                 <span className='cplus_string4 cplus_string' style={{ display: displayString6 }}>std::printf("Результат: %d\n", x);</span>
                                 <span className='cplus_string5 cplus_string' style={{ display: displayString1 }}> &#125;</span>
 
-
                             </div>
-
-
                         </div>
                         <div className='back_container' style={{ display: displayWin, opacity: opacityWin, transition: 'all .6s ease-in-out' }}>
                             <div className='text_back_container'>Молодец! Ты сделал решатель линейных уровнений!</div>
@@ -688,7 +599,6 @@ function Cplus({ hideCplus }) {
                         </div>
                     </div>
                 </div>
-
             </div >
 
         </div >

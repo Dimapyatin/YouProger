@@ -8,18 +8,13 @@ function Python({ hidePython }) {
     const [color, setColor] = useState('')
     const [shadow, setShadow] = useState('')
 
-
     function trasparentStyle() {
         setColor('transparent');
         setShadow('0px 0px 4px #ffffff');
-
-
     }
     function trasparentStyleBack() {
         setColor('');
         setShadow('');
-
-
     }
 
 
@@ -71,7 +66,6 @@ function Python({ hidePython }) {
 
     const [opacityAlertBtnDescrPython1, setOpacityAlertBtnDescrPython1] = useState('0')
 
-
     const [displayDescrPython1, setDisplayDescrPython1] = useState('none')
     const [transformDescrPython1, setTransformDescrPython1] = useState('scale(0)')
     const [opacityDescrPython1, setOpacityDescrPython1] = useState('0')
@@ -113,14 +107,11 @@ function Python({ hidePython }) {
             setOpacityAlertBtnDescrPython1('0')
         }, 10000);
 
-
         setOpacityBtnDescrPython2('0')
         setOpacityBtnDescrPython3('0')
         setOpacityBtnDescrPython4('0')
         setOpacityBtnDescrPython5('0')
         setOpacityBtnDescrPython6('0')
-
-
 
     }
 
@@ -135,9 +126,6 @@ function Python({ hidePython }) {
         setOpacityBtnDescrPython4('1')
         setOpacityBtnDescrPython5('1')
         setOpacityBtnDescrPython6('1')
-
-
-
 
     }
 
@@ -261,18 +249,15 @@ function Python({ hidePython }) {
         setOpacityBtnDescrPython5('1')
     }
 
-
     const [inputValuePython1, setInputValuePython1] = useState('');
     const handleChangeTakeValue1 = (event) => {
         setInputValuePython1(event.target.value);
     };
 
-
     const [inputValuePython2, setInputValuePython2] = useState('');
     const handleChangeTakeValue2 = (event) => {
         setInputValuePython2(event.target.value);
     };
-
 
     const [displayResultCodePython, setDisplayResultCodePython] = useState('none')
     const [opacityResultCodePython, setOpacityResultCodePython] = useState('0')
@@ -305,8 +290,6 @@ function Python({ hidePython }) {
         setInputValuePython3(e.target.value);
     };
 
-
-
     const [inputValuePython3, setInputValuePython3] = useState('');
     const [resultInputValuesPython, setResultInputValuesPython] = useState('');
     const calculateResultInputPython = (event) => {
@@ -324,36 +307,15 @@ function Python({ hidePython }) {
             case "-":
                 setResultInputValuesPython(number1 - number2);
                 break;
-            case "*":
-                setResultInputValuesPython(number1 * number2);
-                break;
-            case "/":
-                setResultInputValuesPython(number1 / number2);
-                break;
             default:
                 setResultInputValuesPython("Ошибка: неверный оператор!");
         }
-
-
-        // let num1 = parseInt(inputValuePython1);
-        // let num2 = parseInt(inputValuePython2);
-        // let result;
-        // if (inputValuePython3 === '+') {
-        //     result = num1 + num2;
-        // } else if (inputValuePython3 === '-') {
-        //     result = num1 - num2;
-        // }
-        // setResultInputValuesPython(result);
     }
-
 
     return (
         <div>
             <div className='python_wrapper'>
-
                 <div className='python_backgr'>
-
-
                     <div className='python_text'>
                         <div className='python_headText' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} >
                             Знакомьтесь, Python!
@@ -367,7 +329,7 @@ function Python({ hidePython }) {
 
                                 <div className='wrapper_text_python'>
                                     <div className='first_part_compilies'>
-                                        <span className='python_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 1. Напишем команду print, чтобы иметь вомзожность выводить данные в программу</span>
+                                        <span className='python_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 1. Напишем команду print, чтобы иметь возможность выводить данные в программу</span>
                                         {/* <div style={{ opacity: opacityAlertBtnDescrPython1, transition: 'all .8s' }} className='alert_btn_descr_compilies1'>Нажмите, чтобы зафиксировать текст</div> */}
                                         <div
                                             style={{
@@ -399,15 +361,11 @@ function Python({ hidePython }) {
 
                                                 </div>
                                             </div>
-
-
                                         </div>
-
                                     </div>
                                     <span onClick={showString1} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Добавить print</span>
                                 </div>
                             </div>
-
 
                             <div className='cont_wrapper_text_python'>
                                 <div className='wrapper_text_python_right'>
@@ -447,12 +405,9 @@ function Python({ hidePython }) {
                                     </div>
                                     <span onClick={showString2} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Добавить переменные</span>
                                 </div>
-
                             </div>
 
-
                             <div className='cont_wrapper_text_python'>
-
                                 <div className='wrapper_text_python'>
                                     <div className='first_part_compilies'>
                                         <span className='python_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 3. Добавим input, чтобы пользователь мог взаимодействовать с программой</span>
@@ -490,9 +445,7 @@ function Python({ hidePython }) {
                                 </div>
                             </div>
 
-
                             <div className='cont_wrapper_text_python'>
-
                                 <div className='wrapper_text_python_right'>
                                     <div className='first_part_compilies'>
                                         <span className='python_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 4. Внесём условные операторы для проверки условий и упрощения кода</span>
@@ -530,7 +483,6 @@ function Python({ hidePython }) {
                                     <span onClick={showString4} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Добавить if, elif и else</span>
                                 </div>
                             </div>
-
 
                             <div className='cont_wrapper_text_python'>
                                 <div className='wrapper_text_python'>
@@ -571,9 +523,7 @@ function Python({ hidePython }) {
                                 </div>
                             </div>
 
-
                             <div className='cont_wrapper_text_python'>
-
                                 <div className='wrapper_text_python_right'>
                                     <div className='first_part_compilies'>
                                         <span className='python_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 6. Добавим функцию считывания и опробуем код в работе</span>
@@ -615,16 +565,10 @@ function Python({ hidePython }) {
                                     }} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Добавить result и тип данных</span>
                                 </div>
                             </div>
-
-
-
-
-
                         </div>
                     </div>
                     <div className='area_code'>
                         <div className='cont_txt_area_code'>
-
 
                             <br /><span className='python_string1 python_string' style={{ display: displayString1 }}>print("Напишите два целых числа: ");</span>
                             <br />
@@ -678,10 +622,9 @@ function Python({ hidePython }) {
                                 />
                             </div>
 
-
                             <div style={{
                                 display: displayResultCodeStringPython1
-                            }}>Выберите действие (+ | - | * | / ):
+                            }}>Выберите действие (+ | -):
                                 <br /><input className='input_result_python3' type="text"
                                     maxLength={1}
                                     value={inputValuePython3}
@@ -695,12 +638,9 @@ function Python({ hidePython }) {
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     )
-
 }
 
 export default Python;

@@ -3,24 +3,17 @@ import './Js.css';
 import { useState } from 'react';
 
 const Js = ({ hideJs }) => {
-
     const [color, setColor] = useState('')
     const [shadow, setShadow] = useState('')
-
 
     function trasparentStyle() {
         setColor('transparent');
         setShadow('0px 0px 4px #ffffff');
-
-
     }
     function trasparentStyleBack() {
         setColor('');
         setShadow('');
-
-
     }
-
 
     const [displayString1, setDisplayString1] = useState('none');
     const [displayString2, setDisplayString2] = useState('none');
@@ -102,14 +95,11 @@ const Js = ({ hideJs }) => {
             setOpacityAlertBtnDescrJs1('0')
         }, 10000);
 
-
         setOpacityBtnDescrJs2('0')
         setOpacityBtnDescrJs3('0')
         setOpacityBtnDescrJs4('0')
         setOpacityBtnDescrJs5('0')
         setOpacityBtnDescrJs6('0')
-
-
 
     }
 
@@ -124,9 +114,6 @@ const Js = ({ hideJs }) => {
         setOpacityBtnDescrJs4('1')
         setOpacityBtnDescrJs5('1')
         setOpacityBtnDescrJs6('1')
-
-
-
 
     }
 
@@ -250,10 +237,6 @@ const Js = ({ hideJs }) => {
         setOpacityBtnDescrJs5('1')
     }
 
-
-
-
-
     const [displayResultCodeJs, setDisplayResultCodeJs] = useState('none')
     const [opacityResultCodeJs, setOpacityResultCodeJs] = useState('0')
     function showResultCodeJs() {
@@ -262,7 +245,6 @@ const Js = ({ hideJs }) => {
         }, 1000);
         setOpacityResultCodeJs('1');
     }
-
 
     const [randomNumState, setRandomNumState] = useState(0)
     const randomNumberFunction = (min, max) => {
@@ -274,15 +256,10 @@ const Js = ({ hideJs }) => {
         setRandomNumState(randomNum);
     }
 
-
-
     return (
         <div>
-
             <div className='Js_wrapper'>
-
                 <div className='Js_backgr'>
-
                     <div className='Js_text'>
                         <div className='Js_headText' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} >
                             Знакомьтесь, JavaScript!
@@ -328,15 +305,11 @@ const Js = ({ hideJs }) => {
 
                                                 </div>
                                             </div>
-
-
                                         </div>
-
                                     </div>
                                     <span onClick={showString1} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Объявить функцию</span>
                                 </div>
                             </div>
-
 
                             <div className='cont_wrapper_text_Js'>
                                 <div className='wrapper_text_Js_right'>
@@ -376,12 +349,9 @@ const Js = ({ hideJs }) => {
                                     </div>
                                     <span onClick={showString2} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Добавить return</span>
                                 </div>
-
                             </div>
 
-
                             <div className='cont_wrapper_text_Js'>
-
                                 <div className='wrapper_text_Js'>
                                     <div className='first_part_compilies'>
                                         <span className='Js_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 3. Используем Math.random и Math.floor для нахождения случайного числа</span>
@@ -419,9 +389,7 @@ const Js = ({ hideJs }) => {
                                 </div>
                             </div>
 
-
                             <div className='cont_wrapper_text_Js'>
-
                                 <div className='wrapper_text_Js_right'>
                                     <div className='first_part_compilies'>
                                         <span className='Js_short_descr' style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }}><br /> 4. Выведем результат функции через console.log()</span>
@@ -463,13 +431,10 @@ const Js = ({ hideJs }) => {
                                     }} style={{ color: color, textShadow: shadow, transition: 'all .3s ease-in-out' }} className='btn_text_compilies'> Добавить console.log()</span>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
-
                     <div className='area_code'>
-
                         <div className='cont_txt_area_code'>
 
                             <br /><span className='Js_string1 Js_string' style={{ display: displayString1 }}>function randomNumber() &#123;</span>
@@ -498,11 +463,9 @@ const Js = ({ hideJs }) => {
                             <div>{randomNumState}</div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
     );
 }
 

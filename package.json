@@ -1,7 +1,7 @@
 {
+  "homepage": "http://Dimapyatin.github.io/Iproger",
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://Dimapyatin.github.io/Dimapyatin.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -22,14 +22,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node server/server.js",  
-    "client": "cd my-app && npm start",
-  "server": "cd server && node server.js",  
-  "dev": "concurrently \"npm run server\" \"npm run client\"",
-
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build",
-    // "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
