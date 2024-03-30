@@ -5,7 +5,7 @@ const sqlite3 = require('sqlite3').verbose();
 
 const port = 3000;
 
-const db = new sqlite3.Database('../BDFORM.db', (err) => {
+const db = new sqlite3.Database('BDFORM.db', (err) => {
     if (err)
         return console.error(err.message);
     console.log("Круто, база привязана")
