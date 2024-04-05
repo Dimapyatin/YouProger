@@ -197,3 +197,26 @@
         margin: 0;
     }
 }
+@media screen and (max-width: 360px){
+    /* git */
+    .info_backgr{
+        /* width: 30px; */
+    }
+    .info_href_gitg{
+        min-width: 80px;
+        padding: 10px;
+    }
+    /* rew */
+    .info_backgr_rew{
+
+    }
+    .btn_review{
+        min-width: 80px;
+        padding: 10px;
+    }
+    /* kvork */
+    .info_href_kwrk{
+        min-width: 80px;
+        padding: 10px;
+    }
+}

@@ -169,3 +169,20 @@
         margin-left: 30px;
     }
 }
+
+@media screen and (max-width: 360px){
+    .LeftImageOne {
+        width: 60px;
+    }
+    .LeftImageTwo {
+        width: 60px;
+    }
+    .python_info{
+        /* width: 90px; */
+        margin-left: 10px;
+    }
+    .cplus_info{
+        /* width: 90px; */
+        margin-left: 10px;
+    }
+}

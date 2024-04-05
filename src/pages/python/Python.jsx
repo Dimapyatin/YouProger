@@ -600,6 +600,7 @@ function Python({ hidePython }) {
 
                         </div>
                         <div className='back_container' style={{ display: displayWin, opacity: opacityWin, transition: 'all .6s ease-in-out' }}>
+                        <div className='text_back_container'>Молодец! Ты сделал мини-калькулятор!</div>
                             <button onClick={hidePython} className='btn_back_container'>Н А З А Д</button>
                         </div>
 

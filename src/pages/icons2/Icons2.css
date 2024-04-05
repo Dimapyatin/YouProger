@@ -167,3 +167,23 @@
     }
 
 }
+
+@media screen and (max-width: 360px){
+    .RightImageTwo {
+        width: 65px;
+    }
+    .RightImageOne {
+        width: 65px;
+    }
+    .js_info{
+        /* width: 90px; */
+        margin-left: 20px;
+    }
+    .php_info{
+        /* width: 90px; */
+        margin-left: 20px;
+    }
+    .right-images{
+        margin-left: 0px;
+    }
+}

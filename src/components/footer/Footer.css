@@ -317,4 +317,25 @@
     }
 }
 
+@media screen and (max-width: 360px){
+    .contact{
+        min-width: 40px;
+        width: 100%;
+        font-size: 6px;
+        padding: 10px 20px;
+    }
+    .href_dfomic{
+        min-width: 40px;
+        width: 100%;
+        font-size: 6px;
+        padding: 10px 15px;
+    }
+    .href_strela{
+        min-width: 40px;
+        width: 100%;
+        font-size: 6px;
+        padding: 10px 15px;
+    }
+}
+
 
